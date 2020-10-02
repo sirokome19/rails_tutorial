@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
+gem 'mini_magick', '~> 4.8'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -47,6 +47,9 @@ gem 'faker',          '1.7.3'
 gem 'will_paginate',           '3.1.7'
 
 gem 'bootstrap-will_paginate', '1.0.0'
+
+gem 'carrierwave',             '1.2.2'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -75,6 +78,9 @@ group :test do
   gem 'guard-minitest',           '2.4.4'
 end
 
+group :production do
+  gem 'fog', '1.42'
+end
   
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
