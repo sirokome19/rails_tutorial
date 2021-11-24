@@ -10,7 +10,7 @@ class MicropostsControllerTest < ActionDispatch::IntegrationTest
       post microposts_path, params: { micropost: { content: "Lorem ipsum" } }
     end
     assert_redirected_to login_url
-  end
+  endfsda
 
   test "should redirect destroy when not logged in" do
     assert_no_difference 'Micropost.count' do
